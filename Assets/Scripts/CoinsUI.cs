@@ -8,7 +8,7 @@ public class CoinsUI : MonoBehaviour
     private Text _coinsText;
     [SerializeField]
     private UnityEvent _OnCoinsUpdated;
-    public void UpodateCoins(int coinsNumber)
+    public void UpdateCoins(int coinsNumber)
     {
         _coinsText.text = "x" + coinsNumber;
         _OnCoinsUpdated.Invoke();
